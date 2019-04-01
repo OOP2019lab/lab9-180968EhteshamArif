@@ -8,7 +8,10 @@ using namespace std;
 #define EMPLOYEE_H
 class Employee
 {
-	char* emp_name; 
+	char* emp_name;
+	Address add;
+	Project**ar;
+	int noofproj;
 	//Add Data Members here
 	
 public:
@@ -22,7 +25,7 @@ public:
 	//overloaded assignment operator
 
 	void addProject(Project const * );
-	void removeProject(Project const * ); 
+	void removeProject(Project const * );
 
 	~Employee();
 
